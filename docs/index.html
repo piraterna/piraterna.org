@@ -4,51 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piraterna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0078D4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #0078D4;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+
+        section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0078D4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <header>
+        <img src="piraterna.png" alt="Piraterna Logo" width="150px">
         <h1>Piraterna</h1>
-        <p>Welcome to <strong>Piraterna</strong>, a group dedicated to creating <strong>100% open-source</strong> and <strong>free software</strong>.</p>
+        <p>Your source for 100% open-source and free software</p>
+    </header>
 
-        <section>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission and Values</a></li>
+            <li><a href="#becoming-a-pirat">Becoming a Pirat</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
             <h2>About Piraterna</h2>
-            <p><strong>Piraterna</strong> is a group based in Sweden that focuses on freedom. The name <em>Piraterna</em> means <em>The Pirates</em> in Swedish. The project began on <strong>November 26, 2024</strong>, with the idea of forming a group dedicated to freedom-oriented software development.</p>
-            <p>Our mission is simple: to create tools and libraries that anyone can use, modify, and share without restrictions. We prioritize openness, collaboration, and respect for user freedom.</p>
-            <p>If you believe in building a freer, more open software ecosystem, you’re in the right place. Join us in creating software that belongs to everyone.</p>
+            <p><strong>Piraterna</strong> is an international collective of like-minded individuals united by a shared mission to create freedom-oriented software. While our roots are in Sweden, our community spans the globe, bringing together developers, hackers, activists, and anyone who believes in empowering users through open-source technology.</p>
+            <p>Our project was founded on <strong>November 26, 2024</strong>, driven by the idea that software should be a tool for personal and collective freedom. We’re committed to creating software that is accessible, transparent, and open for everyone to use, modify, and distribute. With Piraterna, you’re not just getting access to free software – you’re joining a movement to ensure that technology works for the people and not against them.</p>
+            <p>We believe that open-source software is key to building a more transparent and free society. Our tools are designed to foster collaboration, and we encourage developers from all over the world to contribute, whether by improving code, developing new features, or helping others in the community.</p>
         </section>
 
-        <section>
-            <h2>What We Believe</h2>
-            <p><strong>Piraterna</strong> is a non-political, non-profit organization focused entirely on promoting freedom through open-source software. We believe that technology should empower users, not restrict them. Our core values include:</p>
+        <section id="mission">
+            <h2>Our Mission and Values</h2>
+            <p>At Piraterna, our mission is simple but powerful: we want to build software that belongs to everyone. This mission is underpinned by several core values that guide everything we do:</p>
             <ul>
-                <li>Freedom to use, modify, and share software without restrictions.</li>
-                <li>Transparency and openness in all aspects of development.</li>
-                <li>Respect for user privacy and autonomy.</li>
-                <li>Building a collaborative and inclusive community.</li>
+                <li><strong>Freedom:</strong> Our software is free as in freedom. Users have the right to use, modify, and distribute our software without restrictions. We believe in empowering individuals, not locking them into proprietary ecosystems.</li>
+                <li><strong>Transparency:</strong> We are fully transparent about our development processes. Anyone can inspect our code, contribute to our projects, and know exactly how our software works.</li>
+                <li><strong>Privacy:</strong> We respect your right to privacy. Our software is built to protect your data and give you control over how it is used. We do not collect unnecessary information and will never track your activities.</li>
+                <li><strong>Collaboration:</strong> We’re stronger together. Our community values open collaboration, where everyone’s voice is heard. Whether you’re a beginner or an expert, we welcome contributions of all kinds – from code to documentation to ideas.</li>
+                <li><strong>Inclusivity:</strong> We are committed to creating an inclusive space for people of all backgrounds. Our projects are open to everyone, and we encourage diversity in both contributors and users.</li>
             </ul>
-            <p>We remain committed to these principles to ensure that software serves the public good rather than private interests.</p>
+            <p>These values are what make Piraterna more than just a group of developers – we are a community working towards a common goal: making software that’s free, open, and empowering for everyone.</p>
         </section>
 
-        <section>
+        <section id="becoming-a-pirat">
             <h2>Becoming a Pirat</h2>
-            <p><i>Note: <em>Pirat</em> means <em>Pirate</em> in Swedish.</i></p>
-            <p>To become a Pirat, you can contact us at <a href="mailto:contact@piraterna.org">contact@piraterna.org</a>. Send me an email with a brief introduction about yourself and your goals as a member.</p>
-            <p><strong>You don’t need to become a Pirat to access our software. However, as a Pirat, you contribute to building a stable platform for further development.</strong></p>
+            <p><i>Note: <em>Pirat</em> means <em>Pirate</em> in Swedish. It’s our term for a member of our community.</i></p>
+            <p>Becoming a Pirat is a way to support Piraterna and help fund the infrastructure and services that allow us to keep developing and maintaining free software. As a non-profit organization, we rely on contributions from our members to keep the project alive. Your support helps us pay for servers, hosting, development tools, and other essential resources that power Piraterna’s mission.</p>
+            <p>The best part? There’s no fixed amount – you decide how much you want to contribute. Whether it’s a small donation or a larger one, every bit helps us move forward. As a Pirat, your financial support ensures that we can continue to provide free, open-source software for everyone, while keeping it sustainable for the long term.</p>
+            <p><strong>All funds received through donations and contributions go directly back into the project. Nothing is used privately, and every penny supports the development, maintenance, and growth of Piraterna.</strong> Your contribution will help us maintain servers, fund development, and ensure the sustainability of our mission.</p>
+            <p><strong>While we do ask for financial support to become a Pirat, you do not need to pay anything to use or contribute to our software. Our tools and services will always remain free and open to everyone.</strong> The Pirat membership is simply a way to help us keep the lights on and fund the services we rely on to bring you the best open-source solutions.</p>
+            <p>To become a Pirat, please send us an email at <a href="mailto:contact@piraterna.org">contact@piraterna.org</a>, and let us know your chosen contribution amount. Once you’ve joined, you’ll be a part of a global community working together to build a more open and free software ecosystem.</p>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-            <p>Currently, we are only available on Matrix. You can reach us at <strong>#piraterna:matrix.org</strong>. We are exploring the option of self-hosting a chat platform, so stay tuned for updates!</p>
+            <p>We’re always happy to hear from anyone interested in our projects. Currently, we are available on Matrix at <strong>#piraterna:matrix.org</strong>, where you can join our discussions, ask questions, or just hang out with other Piraterna members.</p>
+            <p>We are also exploring the possibility of hosting our own chat platform to increase privacy and control. Stay tuned for updates on that front!</p>
             <p>Follow us on social media:</p>
             <ul>
-                <li><a href="https://github.com/piraterna" target="_blank">GitHub</a></li>
-                <li><a href="https://x.com/piraterna_org" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/piraterna" target="_blank">GitHub – Explore our code and contribute!</a></li>
+                <li><a href="https://x.com/piraterna_org" target="_blank">Twitter – Stay updated on our latest projects and news.</a></li>
             </ul>
             <p>Email:</p>
             <ul>
                 <li><a href="mailto:contact@piraterna.org">contact@piraterna.org</a></li>
             </ul>
+            <p>If you’re interested in contributing to a specific project or have any technical questions, feel free to get in touch with us directly through email or Matrix!</p>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Piraterna. All rights reserved. Join us in building the future of free software.</p>
+    </footer>
 </body>
 </html>
